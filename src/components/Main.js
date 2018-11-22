@@ -36,4 +36,13 @@ export class Main extends React.Component {
       </div>
     );
   }
+  /*render() {
+    return (
+      <div className="main">
+        <Switch>
+          <Route exact path="/" component={Home}/>
+        </Switch>
+      </div>
+    );
+  }*/
 }
