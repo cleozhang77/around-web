@@ -24,10 +24,11 @@ class NormalLoginForm extends React.Component {
             username: values.username,
             password: values.password,
           }),
-        }).then((response) => {
-          this.props.handleLogin(response);
-        }, (error) => {
-          message.error(error.reponseText);
+          contentType: 'application/json',
+        }).then((responseData, textStatus, jqXHR) => {
+          this.props.handleLogin(responseData.token);
+        }, (jqXHR, textStatus, errorThrown) => {
+          message.error(jqXHR.reponseText);
         }).catch((error) => {
           message.error(error);
         });

@@ -1,20 +1,23 @@
 import React from 'react';
-import {Button, message} from 'antd';
-import {WrappedCreatePostForm} from './CreatePostForm';
+import { Button, message } from 'antd';
+import { WrappedCreatePostForm } from './CreatePostForm';
 import $ from 'jquery';
-import {API_ROOT, TOKEN_KEY, AUTH_PREFIX, POS_KEY} from '../constants';
+import { API_ROOT, TOKEN_KEY, AUTH_PREFIX, POS_KEY } from '../constants';
 
 export class CreatePostButton extends React.Component {
   state = {
     visible: false,
     confirmLoading: false,
   }
+
   showModal = () => {
     this.setState({visible: true});
   }
+
   handleCancel = () => {
     this.setState({visible: false});
   }
+
   handleCreate = () => {
     const form = this.form;
     form.validateFields((err, values) => {
@@ -27,7 +30,7 @@ export class CreatePostButton extends React.Component {
       formData.set('lat', lat);
       formData.set('lon', lon);
       formData.set('message', form.getFieldValue('message'));
-      formData.set('image', form.getFieldValue('image')[0]);
+      formData.set('image', form.getFieldValue('image')[0].originFileObj);
       this.setState({confirmLoading: true});
       $.ajax({
         method: 'POST',
