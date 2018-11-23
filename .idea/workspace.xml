@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de4bd0f7-92a2-47e1-afa7-383b0a8e6243" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/AroundMarker.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/AroundMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AroundMap.js" afterDir="false" />
     </list>
@@ -28,8 +29,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/AroundMap.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73">
-              <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+            <state relative-caret-position="215">
+              <caret line="27" column="72" selection-start-line="27" selection-start-column="72" selection-end-line="27" selection-end-column="72" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/AroundMarker.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="41" lean-forward="true" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -66,6 +79,7 @@
         <option value="$PROJECT_DIR$/around-web/src/components/CreatePostButton.js" />
         <option value="$PROJECT_DIR$/around-web/src/components/Home.js" />
         <option value="$PROJECT_DIR$/src/components/Home.js" />
+        <option value="$PROJECT_DIR$/src/components/AroundMarker.js" />
         <option value="$PROJECT_DIR$/src/components/AroundMap.js" />
       </list>
     </option>
@@ -111,7 +125,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543013365629" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543013915086" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -140,19 +154,19 @@
       <option name="presentableId" value="Default" />
       <updated>1542920224929</updated>
       <workItem from="1542920227877" duration="575000" />
-      <workItem from="1542921271536" duration="18368000" />
+      <workItem from="1542921271536" duration="18865000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18943000" />
+    <option name="totallyTimeSpent" value="19440000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="445" y="23" width="960" height="779" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5927602" visible="true" weight="0.23965141" />
-      <window_info id="Structure" order="1" sideWeight="0.40723982" side_tool="true" visible="true" weight="0.23965141" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7692308" visible="true" weight="0.23965141" />
+      <window_info id="Structure" order="1" sideWeight="0.23076923" side_tool="true" visible="true" weight="0.23965141" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -311,10 +325,27 @@
     <entry file="file://$PROJECT_DIR$/src/constants.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/react.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1415">
+          <caret line="298" column="8" selection-start-line="298" selection-start-column="8" selection-end-line="298" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/AroundMarker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="41" lean-forward="true" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/AroundMap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+        <state relative-caret-position="215">
+          <caret line="27" column="72" selection-start-line="27" selection-start-column="72" selection-end-line="27" selection-end-column="72" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
