@@ -50,7 +50,7 @@ export class Home extends React.Component {
     const {lat, lon} = JSON.parse(localStorage.getItem(POS_KEY));
     this.setState({loadingPosts: true});
     return $.ajax({
-      url: `${API_ROOT}/search?lat=${lat}&lon=${lon}&range=20`,
+      url: `${API_ROOT}/search?lat=${lat}&lon=${lon}&range=20000`,
       method: 'GET',
       headers: {
         Authorization: `${AUTH_PREFIX} ${localStorage.getItem(TOKEN_KEY)}`,
@@ -58,7 +58,7 @@ export class Home extends React.Component {
     }).then((responseData, textStatus, jqXHR) => {
       this.setState({posts: responseData, error: ''});
       console.log(responseData);
-      console.log(textStatus);
+      console.log(textStatus)
       //console.log(jqXHR);
     }, (jqXHR, textStatus, errorThrown) => {
       this.setState({error: jqXHR.responseText});
