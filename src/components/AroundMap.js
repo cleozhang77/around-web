@@ -21,6 +21,8 @@ class AroundMap extends React.Component {
     const pos = JSON.parse(localStorage.getItem(POS_KEY));
     return (
       <GoogleMap
+        onDragEnd={this.onDragEnd}
+        ref={this.getMapRef}
         defaultZoom={11}
         defaultCenter={{ lat: pos.lat, lng: pos.lon }}
       >
