@@ -22,14 +22,14 @@ export class Gallery extends React.Component {
       return {
         ...image,
         customOverLay: (
-          <div>
+          <div stype={captionStyle}>
             <div>{`${image.user}: ${image.caption}`}</div>
           </div>
         ),
       };
     });
     return (
-      <div>
+      <div stype={wrapperStyle}>
         <GridGallery
           backdropCloseModal
           images={images}

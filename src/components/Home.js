@@ -46,8 +46,8 @@ export class Home extends React.Component {
     this.getGeoLocation();
   }
 
-  loadNearbyPosts = () => {
-    const {lat, lon} = JSON.parse(localStorage.getItem(POS_KEY));
+  loadNearbyPosts = (location) => {
+    let {lat, lon} = location ? location : JSON.parse(localStorage.getItem(POS_KEY));
     this.setState({loadingPosts: true});
     return $.ajax({
       url: `${API_ROOT}/search?lat=${lat}&lon=${lon}&range=20000`,
